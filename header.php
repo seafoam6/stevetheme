@@ -25,9 +25,16 @@
 	</head>
 	<body <?php body_class(); ?>>
 		<!-- nav -->
+		<a href="#" id="menu-toggle-wrapper">
+			<div id="menu-toggle">
+				
+			</div>
+		</a>
+		<a href="#" id="nav-bar">
 			<nav class="nav" role="navigation">
 				<?php html5blank_nav(); ?>
 			</nav>
+		</a>
 		<!-- /nav -->
 		<!-- wrapper -->
 		<div class="wrapper">

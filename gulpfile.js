@@ -6,6 +6,7 @@ var sass = require('gulp-sass');
 var concat = require('gulp-concat');
 var uglify = require('gulp-uglify');
 var rename = require('gulp-rename');
+var livereload = require('gulp-livereload');
 
 // Lint Task
 gulp.task('lint', function() {
@@ -16,7 +17,7 @@ gulp.task('lint', function() {
 
 // Compile Our Sass
 gulp.task('sass', function() {
-    return gulp.src('*.scss')
+    return gulp.src(['*.scss','partials/*.scss' ])
         .pipe(sass())
         .pipe(gulp.dest(''));
 });
@@ -33,8 +34,10 @@ gulp.task('scripts', function() {
 
 // Watch Files For Changes
 gulp.task('watch', function() {
+    //livereload.listen();
     gulp.watch('js/*.js', ['lint', 'scripts']);
     gulp.watch('*.scss', ['sass']);
+    // gulp.watch('**/*.scss', ['sass']).on('change', livereload.changed);
 });
 
 // Default Task

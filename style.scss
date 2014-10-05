@@ -11,8 +11,13 @@
 */
 
 
-@import url("../html5blank-stable/style.css");
+//@import url("../html5blank-stable/style.css");
+$blue : #1F8DDC;
+$black : #000;
+.black{
+	color:#223;z-index: 3;
+}
+ @import "partials/nav.scss";
+h1{
 
-
-/* =Theme customization starts here
--------------------------------------------------------------- */
+}
