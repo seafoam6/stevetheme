@@ -4,14 +4,18 @@
  Description:  Twenty Fourteen Child Theme
  Author:       Steve Barman
  Author URI:   http://stevebarman.com
- Template:     html5blank-stable
+ Template:     html5blank
  Version:      1.0.0
  Tags:         Barmany, Sleek, Slippery
  Text Domain:  stevebarman.com
 */
 
 
-//@import url("../html5blank-stable/style.css");
+@import url("../html5blank-stable/style.css");
+
+/* =Theme customization starts here
+------------------------------------------------------- */
+
 $blue : #1F8DDC;
 $black : #000;
 $blood: red;
@@ -20,5 +24,8 @@ $blood: red;
 }
  @import "partials/nav.scss";
 h1{
-
+	color:red;
+}
+.logo{
+	display:none;
 }

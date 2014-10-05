@@ -25,7 +25,7 @@
 	</head>
 	<body <?php body_class(); ?>>
 		<!-- nav -->
-		<a href="#" id="menu-toggle-wrapper">
+		<a href="#" id="menu-toggle-wrapper" class="test">
 			<div id="menu-toggle">
 				
 			</div>

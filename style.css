@@ -1,14 +1,17 @@
+@import url("../html5blank-stable/style.css");
 /*
  Theme Name:   stevetheme
  Theme URI:    http://example.com/twenty-fourteen-child/
  Description:  Twenty Fourteen Child Theme
  Author:       Steve Barman
  Author URI:   http://stevebarman.com
- Template:     html5blank-stable
+ Template:     html5blank
  Version:      1.0.0
  Tags:         Barmany, Sleek, Slippery
  Text Domain:  stevebarman.com
 */
+/* =Theme customization starts here
+------------------------------------------------------- */
 .black {
   color: #223;
   z-index: 3; }
@@ -32,7 +35,8 @@
   height: 3px;
   background: #dc971f; }
 
-div {
-  display: none;
-  z-index: 6; }
+h1 {
+  color: red; }
 
+.logo {
+  display: none; }
