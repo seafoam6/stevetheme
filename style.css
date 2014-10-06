@@ -12,6 +12,12 @@
 */
 /* =Theme customization starts here
 ------------------------------------------------------- */
+.lato, body {
+  font-family: 'Lato', sans-serif; }
+
+.bangers, h1 {
+  font-family: 'Bangers', cursive; }
+
 .black {
   color: #223;
   z-index: 3; }
@@ -20,20 +26,54 @@
   position: fixed;
   top: 0;
   left: 0;
-  height: 70px;
+  height: 100%;
   width: 70px;
-  display: block; }
+  display: block;
+  z-index: 10;
+  background: #fff; }
+  #menu-toggle-wrapper:hover #menu-toggle:before {
+    top: -5px;
+    transition: top 0.3s ease-in; }
+  #menu-toggle-wrapper:hover #menu-toggle:after {
+    bottom: -5px;
+    transition: bottom 0.3s ease-in; }
 
 #menu-toggle {
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 30px;
+  left: 35px;
   font-size: 30px;
   display: block;
   margin-left: -15px;
   width: 30px;
   height: 3px;
-  background: #dc971f; }
+  background: #1F8DDC; }
+  #menu-toggle:before, #menu-toggle:after {
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background: #1F8DDC;
+    content: "";
+    transition: all 0.3s ease-in; }
+  #menu-toggle:before {
+    top: -10px;
+    left: 0; }
+  #menu-toggle:after {
+    bottom: -10px;
+    left: 0; }
+
+.main-nav {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  width: 300px;
+  height: 100%; }
+
+.wrapper {
+  z-index: 5;
+  background: #b4bad2;
+  width: 100%;
+  padding-left: 100px; }
 
 h1 {
   color: red; }

@@ -30,11 +30,11 @@
 				
 			</div>
 		</a>
-		<a href="#" id="nav-bar">
-			<nav class="nav" role="navigation">
-				<?php html5blank_nav(); ?>
-			</nav>
-		</a>
+
+		<nav class="main-nav" role="navigation">
+			<?php html5blank_nav(); ?>
+		</nav>
+
 		<!-- /nav -->
 		<!-- wrapper -->
 		<div class="wrapper">

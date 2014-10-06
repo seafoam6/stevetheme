@@ -15,10 +15,19 @@
 
 /* =Theme customization starts here
 ------------------------------------------------------- */
-
+.lato,
+body{
+	font-family: 'Lato', sans-serif;
+}
+.bangers{
+	font-family: 'Bangers', cursive;
+}
+h1{
+	@extend .bangers;
+}
 $blue : #1F8DDC;
-$black : #000;
-$blood: red;
+$black : #232323;
+$gray: #B1B1B1;
 .black{
 	color:#223;z-index: 3;
 }
