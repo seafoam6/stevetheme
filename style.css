@@ -39,9 +39,10 @@
     transition: bottom 0.3s ease-in; }
   #menu-toggle-wrapper h1 {
     position: absolute;
-    bottom: 60px;
-    right: -35px;
+    bottom: -60px;
+    left: 10px;
     transform: rotate(-90deg);
+    transform-origin: 0% 0%;
     white-space: nowrap; }
 
 #menu-toggle {
