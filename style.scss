@@ -22,9 +22,7 @@ body{
 .bangers{
 	font-family: 'Bangers', cursive;
 }
-h1{
-	@extend .bangers;
-}
+
 $blue : #1F8DDC;
 $black : #232323;
 $gray: #B1B1B1;
@@ -34,7 +32,9 @@ $red: red;
 }
  @import "partials/nav.scss";
 h1{
-	color:red;
+	@extend .bangers;
+	color:$blue;
+	font-size:40px;
 }
 .logo{
 	display:none;

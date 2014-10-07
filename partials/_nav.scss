@@ -17,6 +17,13 @@
 			transition:bottom 0.3s ease-in;
 		}
 	}
+	h1{
+		position: absolute;
+		bottom: 60px;
+		right: -35px;
+		transform: rotate(-90deg);
+		white-space: nowrap;
+	}
 }
 #menu-toggle{
 	position: absolute;

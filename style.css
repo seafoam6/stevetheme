@@ -37,6 +37,12 @@
   #menu-toggle-wrapper:hover #menu-toggle:after {
     bottom: -5px;
     transition: bottom 0.3s ease-in; }
+  #menu-toggle-wrapper h1 {
+    position: absolute;
+    bottom: 60px;
+    right: -35px;
+    transform: rotate(-90deg);
+    white-space: nowrap; }
 
 #menu-toggle {
   position: absolute;
@@ -76,7 +82,8 @@
   padding-left: 100px; }
 
 h1 {
-  color: red; }
+  color: #1F8DDC;
+  font-size: 40px; }
 
 .logo {
   display: none; }

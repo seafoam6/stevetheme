@@ -21,14 +21,15 @@
             tests: {}
         });
         </script>
-
+        <link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic|Bangers' rel='stylesheet' type='text/css'>
 	</head>
 	<body <?php body_class(); ?>>
 		<!-- nav -->
 		<a href="#" id="menu-toggle-wrapper" class="test">
-			<div id="menu-toggle">
-				
-			</div>
+			<div id="menu-toggle"></div>
+
+			<h1>Steve Barman</h1>
+			
 		</a>
 
 		<nav class="main-nav" role="navigation">
