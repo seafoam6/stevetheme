@@ -1,11 +1,6 @@
 (function($){
-   $('#menu-toggle-wrapper').on('click',function(e){
+   $('#menu-toggle-bar, #menu-toggle').on('click',function(e){
    	e.preventDefault;
-   	$('.wrapper').toggleClass('menu-show');
-   	$('#menu-toggle-wrapper').toggleClass('nav-hide');
+   	$('body').toggleClass('menu-show');
    });
-   $('#menu-toggle').live('click', function(e) {  
-        $('.wrapper').toggleClass('menu-show');
-   	$('#menu-toggle-wrapper').toggleClass('nav-hide');
-    });
 })(jQuery);

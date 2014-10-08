@@ -22,9 +22,9 @@
   color: #223;
   z-index: 3; }
 
-#menu-toggle-wrapper {
+#menu-toggle-bar {
   position: fixed;
-  top: 0;
+  bottom: 0;
   left: 0;
   height: 100%;
   width: 70px;
@@ -33,16 +33,10 @@
   background: #fff;
   margin-left: 0;
   transition: all 0.3s ease-in-out; }
-  #menu-toggle-wrapper.nav-hide {
+  #menu-toggle-bar.nav-hide {
     margin-left: -100%;
     transition: all 0.3s ease-in-out; }
-  #menu-toggle-wrapper:hover #menu-toggle:before {
-    top: -5px;
-    transition: top 0.3s ease-in; }
-  #menu-toggle-wrapper:hover #menu-toggle:after {
-    bottom: -5px;
-    transition: bottom 0.3s ease-in; }
-  #menu-toggle-wrapper h1 {
+  #menu-toggle-bar h1 {
     position: absolute;
     bottom: -60px;
     left: 10px;
@@ -50,36 +44,40 @@
     transform-origin: 0% 0%;
     white-space: nowrap; }
 
-#menu-toggle {
+.hamburger {
   position: fixed;
-  top: 30px;
-  left: 35px;
+  top: 0px;
+  left: 0px;
   font-size: 30px;
   display: block;
-  margin-left: -15px;
-  width: 30px;
-  height: 30px;
+  width: 70px;
+  height: 70px;
   z-index: 50;
-  background: #1F8DDC; }
-  #menu-toggle:before, #menu-toggle:after {
-    position: absolute;
-    height: 3px;
-    width: 100%;
+  padding: 30px 20px; }
+  .hamburger .meat {
     background: #1F8DDC;
-    content: "";
-    transition: all 0.3s ease-in; }
-  #menu-toggle:before {
-    top: -10px;
-    left: 0; }
-  #menu-toggle:after {
-    bottom: -10px;
-    left: 0; }
+    position: relative;
+    height: 3px;
+    width: 100%; }
+    .hamburger .meat:before, .hamburger .meat:after {
+      position: absolute;
+      height: 3px;
+      width: 100%;
+      background: #1F8DDC;
+      content: "";
+      transition: all 0.3s ease-in; }
+    .hamburger .meat:before {
+      top: -10px;
+      left: 0; }
+    .hamburger .meat:after {
+      bottom: -10px;
+      left: 0; }
 
 .main-nav {
   position: absolute;
   z-index: 1;
   top: 0;
-  width: 300px;
+  width: 270px;
   height: 100%;
   padding-top: 100px; }
 
@@ -88,12 +86,24 @@
   background: #b4bad2;
   width: 100%;
   padding-left: 100px;
+  transform: translateX(0px);
   transition: all 0.3s ease-in-out;
+  box-shadow: -1px 0 5px 0 rgba(17, 17, 17, 0.75);
   margin-left: 0; }
 
-.menu-show {
-  margin-left: 275px;
+.menu-show .wrapper {
+  transform: translateX(270px);
   transition: all 0.3s ease-in-out; }
+.menu-show #menu-toggle-bar {
+  transform: translateX(-100%);
+  transition: all 0.1s ease-in-out; }
+
+.nav-icon {
+  border-radius: 50%;
+  overflow: hidden;
+  padding: 0;
+  box-shadow: 2px 2px 0px 3px #1F8DDC;
+  margin: 50px; }
 
 h1 {
   color: #1F8DDC;

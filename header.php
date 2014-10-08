@@ -24,16 +24,19 @@
         <link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic|Bangers' rel='stylesheet' type='text/css'>
 	</head>
 	<body <?php body_class(); ?>>
-		<!-- nav -->
-		<div id="menu-toggle"></div>
-		<a href="#" id="menu-toggle-wrapper" class="test">
-			
-
-			<h1>Steve Barman</h1>
-			
+	  <!-- nav -->
+		<a href="#" id="menu-toggle">
+			<div class="hamburger">
+				<div class="meat"></div>
+			</div>
 		</a>
-
+		<a href="#" id="menu-toggle-bar">
+			<h1>Steve Barman</h1>
+		</a>
 		<nav class="main-nav" role="navigation">
+      <div class="nav-icon">
+        <img src="<?php bloginfo('stylesheet_directory'); ?>/img/steve-icon.jpg">
+      </div>
 			<?php html5blank_nav(); ?>
 		</nav>
 
