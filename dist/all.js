@@ -622,3 +622,7 @@
   };
 
 }(jQuery, window, window.document));
+
+(function($){
+   
+})(jQuery);
