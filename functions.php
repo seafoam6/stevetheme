@@ -11,10 +11,16 @@ function foundation_scripts() {
 
 	wp_register_script( 'foundationjs', get_stylesheet_directory_uri() .'/js/foundation.js', array( 'jquery' ), false, true );
 	wp_enqueue_script( 'foundationjs' );
-
 }
-
 // Hook into the 'wp_enqueue_scripts' action
 add_action( 'wp_enqueue_scripts', 'foundation_scripts' );
+// Register Script
+function steve_js() {
+
+	wp_register_script( 'stevejs', get_stylesheet_directory_uri() .'/js/steve.js', array( 'jquery' ), false, true );
+	wp_enqueue_script( 'stevejs' );
+}
+// Hook into the 'wp_enqueue_scripts' action
+add_action( 'wp_enqueue_scripts', 'steve_js' );
 
 ?>
