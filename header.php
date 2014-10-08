@@ -25,8 +25,9 @@
 	</head>
 	<body <?php body_class(); ?>>
 		<!-- nav -->
+		<div id="menu-toggle"></div>
 		<a href="#" id="menu-toggle-wrapper" class="test">
-			<div id="menu-toggle"></div>
+			
 
 			<h1>Steve Barman</h1>
 			
