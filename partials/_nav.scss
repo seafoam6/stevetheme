@@ -73,13 +73,13 @@ $nav-full-width:270px;
 }
 .wrapper{
 	z-index: 5;
-	background: #b4bad2;
+	background: $black;
 	width:100%;
 	padding-left:100px;
 	transform:translateX(0px);
 	transition:all 0.3s ease-in-out;
 
-box-shadow: -1px 0 5px 0 rgba(#111, 0.75);
+box-shadow: -1px 0 0px 0 rgba(17, 17, 17, 0.35);
 	margin:{
 		left:0;
 	}
@@ -98,6 +98,7 @@ box-shadow: -1px 0 5px 0 rgba(#111, 0.75);
 	border-radius: 50%;
 overflow: hidden;
 padding: 0;
-box-shadow: 2px 2px 0px 3px $blue;
+box-shadow: 2px 2px 0px 3px $blue,
+3px 3px 0px 3px $black;
 margin: 50px;
 }

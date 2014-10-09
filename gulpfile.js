@@ -7,7 +7,9 @@ var concat = require('gulp-concat');
 var uglify = require('gulp-uglify');
 var rename = require('gulp-rename');
 var livereload = require('gulp-livereload');
-
+var sourcemaps = require('gulp-sourcemaps');
+var autoprefixer = require('gulp-autoprefixer');
+var rubysass = require('gulp-ruby-sass');
 // Lint Task
 gulp.task('lint', function() {
     return gulp.src('js/*.js')
@@ -18,7 +20,15 @@ gulp.task('lint', function() {
 // Compile Our Sass
 gulp.task('sass', function() {
     return gulp.src(['*.scss','partials/*.scss' ])
+        .pipe(sourcemaps.init())
         .pipe(sass())
+        .pipe(gulp.dest(''));
+});
+
+gulp.task('rubysass', function() {
+    return gulp.src(['*.scss','partials/*.scss' ])
+        .pipe(rubysass({sourcemap:true, sourcemapPath:""}))
+        .on('error', function(err){console.log(err.message);})
         .pipe(gulp.dest(''));
 });
 
@@ -29,7 +39,7 @@ gulp.task('scripts', function() {
         .pipe(gulp.dest('dist'))
         .pipe(rename('all.min.js'))
         .pipe(uglify())
-        .pipe(gulp.dest('dist'));
+        .pipe(gulp.dest(''));
 });
 
 // Watch Files For Changes
@@ -42,4 +52,4 @@ gulp.task('watch', function() {
 });
 
 // Default Task
-gulp.task('default', ['lint', 'sass', 'scripts', 'watch']);
+gulp.task('default', ['sass', 'watch']);
