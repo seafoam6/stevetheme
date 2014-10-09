@@ -32,16 +32,22 @@
   z-index: 10;
   background: #fff;
   margin-left: 0;
-  transition: all 0.3s ease-in-out; }
+  -webkit-transition: all 0.3s ease-in-out;
+          transition: all 0.3s ease-in-out; }
   #menu-toggle-bar.nav-hide {
     margin-left: -100%;
-    transition: all 0.3s ease-in-out; }
+    -webkit-transition: all 0.3s ease-in-out;
+            transition: all 0.3s ease-in-out; }
   #menu-toggle-bar h1 {
     position: absolute;
     bottom: -60px;
     left: 10px;
-    transform: rotate(-90deg);
-    transform-origin: 0% 0%;
+    -webkit-transform: rotate(-90deg);
+        -ms-transform: rotate(-90deg);
+            transform: rotate(-90deg);
+    -webkit-transform-origin: 0% 0%;
+        -ms-transform-origin: 0% 0%;
+            transform-origin: 0% 0%;
     white-space: nowrap; }
 
 .hamburger {
@@ -65,7 +71,8 @@
       width: 100%;
       background: #1F8DDC;
       content: "";
-      transition: all 0.3s ease-in; }
+      -webkit-transition: all 0.3s ease-in;
+              transition: all 0.3s ease-in; }
     .hamburger .meat:before {
       top: -10px;
       left: 0; }
@@ -86,17 +93,26 @@
   background: #232323;
   width: 100%;
   padding-left: 100px;
-  transform: translateX(0px);
-  transition: all 0.3s ease-in-out;
+  -webkit-transform: translateX(0px);
+      -ms-transform: translateX(0px);
+          transform: translateX(0px);
+  -webkit-transition: all 0.3s ease-in-out;
+          transition: all 0.3s ease-in-out;
   box-shadow: -1px 0 0px 0 rgba(17, 17, 17, 0.35);
   margin-left: 0; }
 
 .menu-show .wrapper {
-  transform: translateX(270px);
-  transition: all 0.3s ease-in-out; }
+  -webkit-transform: translateX(270px);
+      -ms-transform: translateX(270px);
+          transform: translateX(270px);
+  -webkit-transition: all 0.3s ease-in-out;
+          transition: all 0.3s ease-in-out; }
 .menu-show #menu-toggle-bar {
-  transform: translateX(-100%);
-  transition: all 0.1s ease-in-out; }
+  -webkit-transform: translateX(-100%);
+      -ms-transform: translateX(-100%);
+          transform: translateX(-100%);
+  -webkit-transition: all 0.1s ease-in-out;
+          transition: all 0.1s ease-in-out; }
 
 .nav-icon {
   border-radius: 50%;

@@ -10,6 +10,7 @@ var livereload = require('gulp-livereload');
 var sourcemaps = require('gulp-sourcemaps');
 var autoprefixer = require('gulp-autoprefixer');
 var rubysass = require('gulp-ruby-sass');
+var minifycss = require('gulp-minify-css');
 // Lint Task
 gulp.task('lint', function() {
     return gulp.src('js/*.js')
@@ -20,8 +21,11 @@ gulp.task('lint', function() {
 // Compile Our Sass
 gulp.task('sass', function() {
     return gulp.src(['*.scss','partials/*.scss' ])
-        .pipe(sourcemaps.init())
-        .pipe(sass())
+        .pipe(sass({style:'expanded'}))
+        .pipe(autoprefixer('last 2 version'))
+        .pipe(gulp.dest(''))
+        .pipe(rename({suffix:'.min'}))
+        .pipe(minifycss())
         .pipe(gulp.dest(''));
 });
 
