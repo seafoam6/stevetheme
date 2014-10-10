@@ -58,7 +58,6 @@ $nav-full-width:270px;
 			left:0;
 		}
 	}
-	
 
 }
 .main-nav{
@@ -101,4 +100,21 @@ padding: 0;
 box-shadow: 2px 2px 0px 3px $blue,
 3px 3px 0px 3px $black;
 margin: 50px;
+}
+.menu {
+	ul{
+		padding:0;
+	}
+	.page_item{
+		border-bottom: 1px solid #F0F0F0;
+		list-style: none;
+		a{
+			padding: 12px 35px;
+			text-transform: none;
+			font-size: 13px;
+			position:relative;
+			color:#818181;
+			display:block;
+		}
+	}
 }
