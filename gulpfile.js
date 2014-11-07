@@ -20,19 +20,11 @@ gulp.task('lint', function() {
 
 // Compile Our Sass
 gulp.task('sass', function() {
-    return gulp.src(['*.scss','partials/*.scss' ])
+    return gulp.src(['scss/**/*.scss'])
         .pipe(sass({style:'expanded'}))
         .pipe(autoprefixer('last 2 version'))
-        .pipe(gulp.dest(''))
-        .pipe(rename({suffix:'.min'}))
+        //.pipe(rename({suffix:'.min'}))
         .pipe(minifycss())
-        .pipe(gulp.dest(''));
-});
-
-gulp.task('rubysass', function() {
-    return gulp.src(['*.scss','partials/*.scss' ])
-        .pipe(rubysass({sourcemap:true, sourcemapPath:""}))
-        .on('error', function(err){console.log(err.message);})
         .pipe(gulp.dest(''));
 });
 
@@ -50,7 +42,7 @@ gulp.task('scripts', function() {
 gulp.task('watch', function() {
     //livereload.listen();
     gulp.watch('js/*.js', ['lint', 'scripts']).on('change', livereload.changed);
-    gulp.watch(['*.scss','partials/*.scss' ], ['sass']).on('change', livereload.changed);
+    gulp.watch(['scss/**/*.scss' ], ['sass']).on('change', livereload.changed);
     gulp.watch(['*.php']).on('change', livereload.changed);
     // gulp.watch('**/*.scss', ['sass']).on('change', livereload.changed);
 });

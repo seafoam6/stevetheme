@@ -12,11 +12,24 @@
 
 
 @import url("../html5blank-stable/style.css");
-@import "scss/normalize.scss";
+
 /* =Theme customization starts here
 ------------------------------------------------------- */
+
+@import "normalize.scss";
+@import "partials/settings";
+@import "partials/nav.scss";
+
+// variables 
+$white: #6f6f6f;
+$blue : #1F8DDC;
+$black : #232323;
+$gray: #B1B1B1;
+$red: red;
+
+//re-use
 body{
-  color:#6f6f6f;
+  color:$white;
 }
 .lato,
 body{
@@ -25,15 +38,10 @@ body{
 .bangers{
 	font-family: 'Bangers', cursive;
 }
-
-$blue : #1F8DDC;
-$black : #232323;
-$gray: #B1B1B1;
-$red: red;
 .black{
 	color:#223;z-index: 3;
 }
- @import "partials/nav.scss";
+
 h1{
 	@extend .bangers;
 	color:$blue;
@@ -41,4 +49,7 @@ h1{
 }
 .logo{
 	display:none;
+}
+.steve{
+  display:none;
 }
