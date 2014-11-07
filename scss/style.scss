@@ -19,16 +19,30 @@
 @import "normalize.scss";
 @import "partials/settings";
 @import "partials/nav.scss";
-
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.half{
+  float:left;
+  width:50%;
+}
 // variables 
 html{
   background: $black;
+}
+input[type="submit"]{
+  color:#000;
 }
 .wrapper{
   z-index: 5;
   background: $black;
   width:100%;
-  padding-left:100px;
+  padding:{
+    left:100px;
+    right:30px;
+  }
   transform:translateX(0px);
   transition:all 0.3s ease-in-out;
   height:100vh;
@@ -37,7 +51,21 @@ html{
     left:0;
   }
 }
-
+body{
+  color:#dadada;
+  font-size:16px;
+}
+a{
+  color:$blue;
+  text-decoration: none;
+  &:link{
+    color:$blue;
+  }
+  &:hover,
+  &:visited{
+    text-decoration: underline;
+  }
+}
 //re-use
 
 .lato,
@@ -59,3 +87,8 @@ h1{
 .logo{
 	display:none;
 }
+.splash{
+  width:100%;
+}
+
+

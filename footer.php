@@ -4,7 +4,7 @@
 				<!-- copyright -->
 				<p class="copyright">
 					&copy; <?php echo date('Y'); ?> Copyright <?php bloginfo('name'); ?>. <?php _e('Powered by', 'Steve Theme'); ?>
-					<a href="//wordpress.org" title="WordPress">WordPress</a> &amp; <a href="http://stevebarman.com" title="Steve Barman">Steve Theme (a child of <a href="http://html5blank.com/" title="html5 blank">HTML5 Blank</a>)</a>.
+					<a href="//wordpress.org" title="WordPress">WordPress</a> &amp; <a href="http://stevebarman.com" title="Steve Barman">Steve Theme</a> (a child of <a href="http://html5blank.com/" title="html5 blank">HTML5 Blank</a>)</a>.
 				</p>
 				<!-- /copyright -->
 
