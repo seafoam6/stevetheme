@@ -35,7 +35,9 @@
 		</a>
 		<nav class="main-nav" role="navigation">
       <div class="nav-icon">
+        <a href="/">
         <img src="<?php bloginfo('stylesheet_directory'); ?>/img/steve-icon.jpg">
+        </a>
       </div>
 			<?php html5blank_nav(); ?>
 		</nav>

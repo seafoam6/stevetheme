@@ -21,16 +21,25 @@
 @import "partials/nav.scss";
 
 // variables 
-$white: #6f6f6f;
-$blue : #1F8DDC;
-$black : #232323;
-$gray: #B1B1B1;
-$red: red;
+html{
+  background: $black;
+}
+.wrapper{
+  z-index: 5;
+  background: $black;
+  width:100%;
+  padding-left:100px;
+  transform:translateX(0px);
+  transition:all 0.3s ease-in-out;
+  height:100vh;
+  //box-shadow: -1px 0 0px 0 rgba(17, 17, 17, 0.35);
+  margin:{
+    left:0;
+  }
+}
 
 //re-use
-body{
-  color:$white;
-}
+
 .lato,
 body{
 	font-family: 'Lato', sans-serif;
@@ -49,7 +58,4 @@ h1{
 }
 .logo{
 	display:none;
-}
-.steve{
-  display:none;
 }
