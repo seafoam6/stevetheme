@@ -9,6 +9,8 @@ function resizeNav(){
   $('.main-nav').height(bodH);
   $('.wrapper').height(bodH);
 }
-  
+  $(window).on('resize', function(){
+    resizeNav();
+  });
   $(document).on('scroll', resizeNav());
 })(jQuery);
