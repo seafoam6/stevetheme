@@ -31,6 +31,7 @@
 // variables 
 html{
   background: $black;
+  height:100%;
 }
 input[type="submit"]{
   color:#000;
@@ -53,7 +54,9 @@ input[type="submit"]{
 }
 body{
   color:#dadada;
+  background-color:#232323;
   font-size:16px;
+  height:100%;
 }
 a{
   color:$blue;
