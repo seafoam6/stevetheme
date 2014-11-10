@@ -10,10 +10,10 @@
 	margin:{
 		left:0;
 	}
-	transition:all 0.3s ease-in-out;
+	@include transition;
 	&.nav-hide{
 	margin-left:-100%;
-	transition:all 0.3s ease-in-out;
+	@include transition;
 }
 	h1{
 		position: absolute;
@@ -61,6 +61,8 @@
 }
 .main-nav{
 	position:absolute;
+	opacity:0;
+	@include transition(opacity);
 	z-index: 1;
 	top:0;
 	width:$nav-full-width;
@@ -75,6 +77,10 @@
 	#menu-toggle-bar{
 		transform:translateX(-100%);
 		transition:all 0.1s ease-in-out;
+	}
+	.main-nav{
+		opacity:1;
+		@include transition(opacity);
 	}
 }
 .nav-icon{

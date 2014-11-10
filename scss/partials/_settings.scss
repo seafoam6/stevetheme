@@ -5,3 +5,7 @@ $black : #232323;
 $gray: #B1B1B1;
 $red: red;
 $nav-full-width:270px;
+
+@mixin transition($property:all){
+  transition:$property 0.3s ease-in-out;
+}
