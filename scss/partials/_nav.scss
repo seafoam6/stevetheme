@@ -1,3 +1,18 @@
+.menu-show{
+	.wrapper{
+		transform:translateX($nav-full-width);
+		@include transition;
+	}
+	#menu-toggle-bar{
+		transform:translateX(-100%);
+		@include transition;
+	}
+	.main-nav{
+		opacity:1;
+		@include transition(opacity);
+	}
+}
+
 #menu-toggle-bar{
 	position: fixed;
 	bottom: 0;
@@ -12,8 +27,8 @@
 	}
 	@include transition;
 	&.nav-hide{
-	margin-left:-100%;
-	@include transition;
+		margin-left:-100%;
+		@include transition;
 }
 	h1{
 		position: absolute;
@@ -46,7 +61,7 @@
 			width:100%;
 			background:$blue;
 			content:"";
-			transition:all 0.3s ease-in;
+			@include transition;
 		}
 		&:before{
 			top:-10px;
@@ -59,30 +74,6 @@
 	}
 
 }
-.main-nav{
-	position:absolute;
-	opacity:0;
-	@include transition(opacity);
-	z-index: 1;
-	top:0;
-	width:$nav-full-width;
-	height:100%;
-	background-color:#fff;
-}
-.menu-show{
-	.wrapper{
-		transform:translateX($nav-full-width);
-		transition:all 0.3s ease-in-out;
-	}
-	#menu-toggle-bar{
-		transform:translateX(-100%);
-		transition:all 0.1s ease-in-out;
-	}
-	.main-nav{
-		opacity:1;
-		@include transition(opacity);
-	}
-}
 .nav-icon{
 	//face in drawer
 	border-radius: 50%;
@@ -93,6 +84,13 @@
 	margin: 50px;
 }
 .main-nav {
+	opacity:0;
+	@include transition(opacity);
+	z-index: 1;
+	top:0;
+	width:$nav-full-width;
+	height:100%;
+	background-color:#fff;
 	position:fixed;
 	ul{
 		padding:0;
@@ -100,30 +98,27 @@
 	}
 	.menu-item{
 		border-bottom: 1px solid #F0F0F0;
-		text-transform: uppercase;
 		list-style: none;
 		a{
 			padding: 12px 35px;
-			text-transform: none;
 			font-size: 13px;
 			position:relative;
 			color:$black;
 			display:block;
 			border-right:0px solid $blue;
-			transition:border 0.3s ease-in-out;
+			@include transition(border);
+			text-decoration:none;
 		}
 		&.current-menu-item a{
 			border:{
 				right:10px solid $blue;
 			}
-			cursor:not-allowed;
 		}
 		&:hover a{
 			border:{
 				right:10px solid $black;
 			}
-
-			transition:border 0.3s ease-in-out;
+			@include transition(border);
 		}
 	}
 }
