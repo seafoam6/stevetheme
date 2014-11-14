@@ -32,6 +32,7 @@
 html{
   background: $black;
   height:100%;
+
 }
 input[type="submit"]{
   color:#000;
@@ -57,6 +58,7 @@ body{
   background-color:#232323;
   font-size:16px;
   height:100%;
+  cursor:url(img/steve-head-cursor.png), auto;
 }
 a{
   color:$blue;
