@@ -96,6 +96,7 @@
 		padding:0;
 		margin:0;
 	}
+	.page_item,
 	.menu-item{
 		border-bottom: 1px solid #F0F0F0;
 		list-style: none;
@@ -109,6 +110,7 @@
 			@include transition(border);
 			text-decoration:none;
 		}
+		&.current_page_item a,
 		&.current-menu-item a{
 			border:{
 				right:10px solid $blue;
