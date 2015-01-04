@@ -59,6 +59,7 @@ body{
   font-size:16px;
   height:100%;
   cursor:url(img/steve-head-cursor.png), auto;
+  overflow-x:hidden;
 }
 a{
   color:$blue;
