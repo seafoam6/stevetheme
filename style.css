@@ -483,7 +483,8 @@ body {
   background-color: #232323;
   font-size: 16px;
   height: 100%;
-  cursor: url(img/steve-head-cursor.png), auto; }
+  cursor: url(img/steve-head-cursor.png), auto;
+  overflow-x: hidden; }
 
 a {
   color: #1F8DDC;
